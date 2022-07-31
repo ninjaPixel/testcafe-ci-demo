@@ -1,10 +1,11 @@
 FROM node:lts-alpine3.16
 RUN apk add firefox
-USER node
+#USER node
 WORKDIR /code
 COPY package-lock.json package.json ./
 RUN npm ci
-COPY --chown=node:node . .
+#COPY --chown=node:node . .
+COPY . .
 CMD ["npm","run", "test:headless"]
 
 
