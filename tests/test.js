@@ -9,14 +9,14 @@ const page = new Page();
 // Tests
 test('Text typing basics', async t => {
     await t
-        .typeText(page.nameInput, 'XXX Peter')                      // Type name
+        .typeText(page.nameInput, 'Peter')                      // Type name
         .typeText(page.nameInput, 'Paker', { replace: true })   // Replace with last name
         .typeText(page.nameInput, 'r', { caretPos: 2 })         // Correct last name
-        .expect(page.nameInput.value).eql('Parker');            // Check result
+        .expect(page.nameInput.value).eql('ParkerX');            // Check result
 });
 
 
-test('Click an array of labels and then check their states', async t => {
+test.skip('Click an array of labels and then check their states', async t => {
     for (const feature of page.featureList) {
         await t
             .click(feature.label)
