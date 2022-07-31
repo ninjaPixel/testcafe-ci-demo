@@ -9,7 +9,7 @@
   "scripts": {
     "test": "testcafe chrome tests/test.js --reporter teamcity",
     "test:local": "testcafe firefox tests/test.js",
-    "test:headless": "testcafe firefox:headless tests/test.js"
+    "test:headless": "testcafe firefox:headless tests/test.js --reporter teamcity"
   },
   "repository": {
     "type": "git",
