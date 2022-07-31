@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "testcafe chrome tests/test.js -r teamcity",
+    "test": "testcafe chrome tests/test.js --reporter teamcity",
     "test:local": "testcafe chrome tests/test.js"
   },
   "repository": {

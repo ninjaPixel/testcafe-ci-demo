@@ -32,7 +32,7 @@ test('Dealing with text using keyboard', async t => {
         .pressKey('backspace')                              // Erase a character
         .expect(page.nameInput.value).eql('Pete Parker')    // Check result
         .pressKey('home right . delete delete delete')      // Pick even shorter form for name
-        .expect(page.nameInput.value).eql('P. Parker');     // Check result
+        .expect(page.nameInput.value).eql('P. Parkerx');     // Check result
 });
 
 
