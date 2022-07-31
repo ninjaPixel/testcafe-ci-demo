@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "testcafe chrome tests/test.js --reporter teamcity",
-    "test:local": "testcafe chrome tests/test.js"
+    "test:local": "testcafe firefox tests/test.js",
+    "test:headless": "testcafe firefox:headless tests/test.js"
   },
   "repository": {
     "type": "git",
