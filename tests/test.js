@@ -12,7 +12,7 @@ test('Text typing basics', async t => {
         .typeText(page.nameInput, 'Peter')                      // Type name
         .typeText(page.nameInput, 'Paker', { replace: true })   // Replace with last name
         .typeText(page.nameInput, 'r', { caretPos: 2 })         // Correct last name
-        .expect(page.nameInput.value).eql('Parker...');            // Check result
+        .expect(page.nameInput.value).eql('Parker');            // Check result
 });
 
 
@@ -32,7 +32,7 @@ test('Dealing with text using keyboard', async t => {
         .pressKey('backspace')                              // Erase a character
         .expect(page.nameInput.value).eql('Pete Parker')    // Check result
         .pressKey('home right . delete delete delete')      // Pick even shorter form for name
-        .expect(page.nameInput.value).eql('P. Parkerx');     // Check result
+        .expect(page.nameInput.value).eql('P. Parker');     // Check result
 });
 
 
