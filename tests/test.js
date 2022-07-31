@@ -16,7 +16,7 @@ test('Text typing basics', async t => {
 });
 
 
-test.skip('Click an array of labels and then check their states', async t => {
+test('Click an array of labels and then check their states', async t => {
     for (const feature of page.featureList) {
         await t
             .click(feature.label)
