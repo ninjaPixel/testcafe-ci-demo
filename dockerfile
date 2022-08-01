@@ -6,7 +6,7 @@ COPY package-lock.json package.json ./
 RUN npm ci
 #COPY --chown=node:node . .
 COPY . .
-CMD ["npm","run", "test:headless"]
+#CMD ["npm","run", "test:headless"]
 
 
 ##FROM circleci/node:14.18.2-browsers
